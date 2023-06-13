@@ -1,0 +1,1 @@
+{"mappings":"ACOA;;;;;;;;;AAqBA;;;;AAIA;;;;AAGA;;;;AAGA;;;;AAGA;;;;;AAKA","sources":["Project/scss/main.scss","Project/scss/settings/_reset.scss"],"sourcesContent":["@import 'settings/reset';\r\n@import 'settings/variables';\r\n\r\n",null],"names":[],"version":3,"file":"index.19200c30.css.map","sourceRoot":"/__parcel_source_root/"}
