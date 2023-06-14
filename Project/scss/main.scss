@@ -1,3 +1,15 @@
 @import 'settings/reset';
-@import 'settings/variables';
+@import "settings/variables";
+@import "settings/mixins";
+@import "sections/header";
 
+
+
+
+.page_container{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  //display: flex;
+  background-color: $color-black-background;
+}

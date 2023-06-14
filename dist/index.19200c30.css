@@ -33,4 +33,60 @@ table {
   border-spacing: 0;
 }
 
+.menu_main-container {
+  background-color: #d8d8d8;
+  height: 60px;
+  margin: 0 0 0 123px;
+  position: relative;
+  top: 10px;
+}
+
+.menu_main-container .menu_main {
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+@media (width >= 736px) {
+  .menu_main-container .menu_main {
+    gap: 22px;
+    margin-left: 100px;
+  }
+}
+
+@media (width <= 736px) {
+  .menu_main-container .menu_main {
+    gap: 5%;
+    margin-left: 10%;
+    line-height: 10px;
+  }
+}
+
+.menu_main-container .menu_main .menu_aside_element, .menu_main-container .menu_main a {
+  color: #000;
+  flex-direction: row;
+  font-family: Roboto;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+@media (width >= 736px) {
+  .menu_main-container .menu_main .menu_aside_element, .menu_main-container .menu_main a {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 736px) {
+  .menu_main-container .menu_main .menu_aside_element, .menu_main-container .menu_main a {
+    font-size: 10px;
+  }
+}
+
+.page_container {
+  box-sizing: border-box;
+  background-color: #000;
+  width: 100%;
+  min-height: 100vh;
+}
+
 /*# sourceMappingURL=index.19200c30.css.map */

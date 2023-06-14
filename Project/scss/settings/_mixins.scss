@@ -1,0 +1,37 @@
+@import "../settings/variables";
+
+@mixin desktop {
+  @media (min-width: 736px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 736px) {
+    @content;
+  }
+}
+
+@mixin header1 {
+  font-family: $font-primary;
+  font-size: 50px;
+  color: $color-font-black;
+}
+
+@mixin header2{
+  font-family: $font-primary;
+  font-size: 24px;
+  color: $color-font-black;
+}
+
+@mixin header3{
+  font-family: $font-primary;
+  font-size: 24px;
+  color: $color-font-black;
+}
+
+@mixin description{
+  font-family: $font-primary;
+  font-size: 14px;
+  color: $color-font-black;
+}

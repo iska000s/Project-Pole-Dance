@@ -1,0 +1,37 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+
+.menu_main-container {
+  height: 60px;
+  position: relative;
+  top: 10px;
+  margin: 0 0 0 123px;
+  background-color: $color-soft-grey;
+  .menu_main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include desktop {
+      gap: 22px;
+      margin-left: 100px;
+    }
+    @include mobile{
+      gap: 5%;
+      margin-left: 10%;
+      line-height: 10px;
+    }
+    .menu_aside_element, a{
+      @include desktop{
+        font-size: 16px;
+      }
+      @include mobile{
+        font-size: 10px;
+      }
+      flex-direction: row;
+      font-family: $font-primary;
+      font-weight: 300;
+      color: $color-font-black;
+      text-decoration: none;
+    }
+  }
+}
