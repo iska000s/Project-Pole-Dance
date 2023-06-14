@@ -1,0 +1,22 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+
+.menu_aside-container {
+  .menu_aside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 103px;
+    gap: 18px;
+
+    .menu_aside_element, a {
+      font-size: 14px;
+      font-family: $font-primary, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      color: $color-font-white;
+      @include desktop {
+        margin-left: 20px;
+      }
+    }
+  }
+}

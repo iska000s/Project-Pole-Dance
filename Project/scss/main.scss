@@ -1,15 +1,27 @@
 @import 'settings/reset';
 @import "settings/variables";
 @import "settings/mixins";
-@import "sections/header";
 
+@import "sections/header";
+@import "sections/aside";
+@import "sections/footer";
+@import "sections/main-page";
 
 
 
 .page_container{
   box-sizing: border-box;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
   min-height: 100vh;
   //display: flex;
   background-color: $color-black-background;
+}
+.main_page_container{
+  width: 100%;
+  background-color: $color-white-background;
+}
+.figures_container{
+  width: 100%;
 }

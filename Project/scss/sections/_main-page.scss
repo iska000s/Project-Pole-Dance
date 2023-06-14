@@ -1,0 +1,74 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+
+.main_page{
+  position: relative;
+  background-image: url("../img/img_main_page.jpeg");
+  background-repeat: no-repeat;
+  z-index: 200;
+  @include desktop {
+    top: -60px;
+    background-size: 585px;
+    background-position-x: 650px;
+    background-position-y: 70px;
+    padding-top: 70px;
+  }
+  @include mobile{
+    background-size: 80%;
+    background-position: 200% 0;
+  }
+  .header1{
+    font-family: $font-primary sans-serif;
+    font-weight: 300;
+    @include desktop {
+      font-size: 50px;
+      margin: 66px 0 20px 20px;
+    }
+    @include mobile{
+      font-size: 30px;
+      margin-block: 20px;
+    }
+  }
+  .circles_workout-container{
+    display: flex;
+    .circles_workout{
+      background-color: $color-white-background;
+      border-radius: 50%;
+      width: 170px;
+      height: 170px;
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+  .circles_workout-container :nth-of-type(1){
+    border: 10px #E7E6E6 solid;
+    h2, a {
+      border: none;
+    }
+  }
+  .circles_workout-container :nth-child(2){
+    border: 10px #CCCBCB solid;
+    h2, a {
+      border: none;
+    }
+  }
+  .circles_workout-container :nth-of-type(3){
+    border: 10px #9D9D9D solid;
+    h2, a {
+      border: none;
+    }
+  }
+
+  .header2{
+    font-family: $font-primary;
+    font-size: 24px;
+    font-weight: bold;
+    a{
+      text-decoration: none;
+      color: $color-font-black;
+    }
+  }
+}

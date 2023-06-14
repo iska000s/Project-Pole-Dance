@@ -5,8 +5,8 @@
   height: 60px;
   position: relative;
   top: 10px;
-  margin: 0 0 0 123px;
   background-color: $color-soft-grey;
+  z-index: 500;
   .menu_main {
     height: 100%;
     display: flex;
@@ -20,7 +20,7 @@
       margin-left: 10%;
       line-height: 10px;
     }
-    .menu_aside_element, a{
+    .menu_main_element, a{
       @include desktop{
         font-size: 16px;
       }
