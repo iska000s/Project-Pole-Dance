@@ -1,2 +1,39 @@
 @import "../settings/variables";
 @import "../settings/mixins";
+
+.footer_container{
+  clear: both;
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  .menu_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+    background-color: $color-nearly-black;
+    .menu_footer_list{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+      a {
+        font-family: $font-primary;
+        font-size: 12px;
+        text-decoration: none;
+        color: #928E8E;
+      }
+    }
+    a{
+      color: $color-soft-grey;
+    }
+  }
+}

@@ -3,11 +3,16 @@
 
 .menu_main-container {
   height: 60px;
-  position: relative;
   top: 10px;
-  background-color: $color-soft-grey;
+  background-color: white;
   z-index: 500;
+  position: sticky;
+  box-shadow: 15px 3px 60px 2px $color-soft-grey;
+  //border-bottom: 2px black solid;
+
   .menu_main {
+    z-index: 500;
+
     height: 100%;
     display: flex;
     align-items: center;
@@ -21,6 +26,7 @@
       line-height: 10px;
     }
     .menu_main_element, a{
+
       @include desktop{
         font-size: 16px;
       }

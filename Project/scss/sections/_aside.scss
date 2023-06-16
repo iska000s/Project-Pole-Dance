@@ -2,7 +2,14 @@
 @import "../settings/mixins";
 
 .menu_aside-container {
+  height: 100vh;
+
   .menu_aside {
+
+    //NIE DZIAŁA
+    position: sticky;
+
+
     display: flex;
     flex-direction: column;
     margin-top: 103px;
@@ -15,7 +22,7 @@
       text-decoration: none;
       color: $color-font-white;
       @include desktop {
-        margin-left: 20px;
+        margin: 0 25px 0 25px;
       }
     }
   }

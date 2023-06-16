@@ -6,21 +6,21 @@
 @import "sections/aside";
 @import "sections/footer";
 @import "sections/main-page";
-
-
+@import "sections/workout";
+@import "sections/figures";
 
 .page_container{
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  min-height: 100vh;
-  //display: flex;
+  width: 100%;
   background-color: $color-black-background;
 }
 .main_page_container{
   width: 100%;
+  height: 100%;
   background-color: $color-white-background;
+  //height: 100vh;
 }
 .figures_container{
   width: 100%;
