@@ -1,7 +1,12 @@
-// import React, {Component} from "react";
-// import {createRoot} from "react-dom/client";
-// import {figures} from "./figures";
-//
-//
-// const container = document.getElementById("app");
-// const root = createRoot(container);
+import React from "react";
+
+const container = document.getElementById("app");
+const root = createRoot(container);
+
+const App = () => {
+    return(
+        <h1> app komponent</h1>
+    )
+}
+
+root.render(<App/>);

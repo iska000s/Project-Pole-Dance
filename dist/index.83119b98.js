@@ -1,0 +1,9 @@
+// import React, {Component} from "react";
+// import {createRoot} from "react-dom/client";
+// import {figures} from "./figures";
+//
+//
+// const container = document.getElementById("app");
+// const root = createRoot(container);
+
+//# sourceMappingURL=index.83119b98.js.map
