@@ -3,26 +3,34 @@
 
 .menu_aside-container {
   height: 100vh;
-
+  position: absolute;
   .menu_aside {
-
-    //NIE DZIAŁA
-    position: sticky;
-
-
+    @include mobile{
+      width: 15%;
+    }
+    position: fixed;
     display: flex;
     flex-direction: column;
-    margin-top: 103px;
+    padding-top: 103px;
     gap: 18px;
-
-    .menu_aside_element, a {
-      font-size: 14px;
-      font-family: $font-primary, sans-serif;
-      font-weight: bold;
-      text-decoration: none;
-      color: $color-font-white;
-      @include desktop {
-        margin: 0 25px 0 25px;
+    height: 100%;
+    width: 10%;
+    background-color: $color-black-background;
+    .menu_aside_element {
+      margin: 0 0 0 15px;
+      @include mobile {
+      margin: 0 0 0 2px;
+      }
+      a{
+        text-decoration: none;
+        font-size: 14px;
+        font-family: $font-primary, sans-serif;
+        font-weight: bold;
+        color: $color-font-white;
+        @include mobile{
+          font-size: 6px;
+          font-weight: 300;
+        }
       }
     }
   }

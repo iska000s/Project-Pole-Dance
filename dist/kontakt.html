@@ -47,16 +47,114 @@
                 <li class="menu_main_element"><a href="/stroje_pole_dance.html">Stroje pole dance</a></li>
             </ul>
         </header>
-        <h1 class="header1">KONTAKT</h1>
-        <p class="description_text">
-            Masz pytania?
-            Szukasz porady lub chcesz dodać swoją fotkę?
-        </p>
-        <h3 class="header3">Napisz do mnie!</h3>
-        <address class="description_text">
-            <b>Name:</b> Izabela
-            <b>E-mail:</b> <a href="mailto:izabelast@op.pl?subject=Zapytanie ze strony Pole Dance">izabelast@op.pl</a>
-        </address>
+        <section class="contact_box">
+            <div class="contact">
+                <h1 class="header1">KONTAKT</h1>
+                <section class="contact_info">
+                    <p class="description_text">Masz pytania?</p>
+                    <p class="description_text"> Szukasz porady lub chcesz dodać swoją fotkę?</p>
+                    <h3 class="header3">Napisz do mnie!</h3>
+                    <address class="description_text address">
+                        Izabela
+                        <br>E-mail:<a href="mailto:izabelast@op.pl?subject=Zapytanie ze strony Pole Dance">izabelast@op.pl</a>
+                    </address>
+                </section>
+            </div>
+
+            <form class="form_message">
+                <div class="personal_date">
+                    <label for="name">Wpisz imię
+                        <input type="text" id="name" name="name" placeholder="imię">
+                    </label>
+                    <label for="surname">
+                        Wpisz nazwisko<input type="text" id="surname" name="surname" placeholder="nazwisko">
+                    </label>
+                    <label for="email">Wpisz adres mailowy
+                        <input type="email" id="email" name="email" placeholder="adres mailowy">
+                    </label>
+                    <label for="telephone">Wpisz numer telefonu
+                        <input type="number" id="telephone" name="telephone" placeholder="number">
+                    </label>
+                </div>
+                <select name="case" class="case" id="case">
+                    <option value="-1">Wybierz powód wiadomości</option>
+                    <option class="figure_add" value="photo">Chcę wysłać i opublikować na stronie zdjęcie lub film</option>
+                    <option value="questione">Mam pytanie</option>
+                    <option value="note">Mam uwagę / sugestie</option>
+                    <option value="delete">Proszę o usunięcie zdjęcia lub filmiku</option>
+                    <option value="other">Inne</option>
+                </select>
+                <select name="figure_level" class="figure_level" id="figure_level_add_form">
+                    <option value="-1">Wybierz poziom figury</option>
+                    <option value="intro">Intro</option>
+                    <option value="basic">Basic</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <select name="figure_category" class="figure_category" id="figure_level_add_form">
+                    <option value="-1">Wybierz kategorię figury</option>
+                    <option value="intro">Intro</option>
+                    <option value="basic">Basic</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <div class="figure_add_category">
+                    <p>Zaznacz kategorię figury</p>
+                    <div class="figure_categories">
+                        <label class="checkbox checkbox_category"><input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            krzesełko
+                        </label>
+                        <label class="checkbox checkbox_category"><input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            szpagat
+                        </label>
+                        <label class="checkbox checkbox_category"> <input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            handstand</label>
+                        <label class="checkbox checkbox_category"> <input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            shoulder</label>
+                        <label class="checkbox checkbox_category"> <input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            handspring</label>
+                        <label class="checkbox checkbox_category"> <input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            siłowe</label>
+                        <label class="checkbox checkbox_category"> <input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            kombos</label>
+                        <label class="checkbox checkbox_category"> <input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            basic spin</label>
+                        <label class="checkbox checkbox_category"> <input type="checkbox" name="figuer_category" value="1">
+                            <span></span>
+                            obrotowe</label>
+                    </div>
+                </div>
+                <div class="box_message">
+                    <label class="title_message" for="textarea">Wiadomość</label>
+                    <textarea disabled="" class="textarea" rows="3" cols="5" id="messager" placeholder="Wpisz wiadomość"></textarea>
+                    <labl class="agreement  checkbox">
+                        <input type="checkbox" name="agreement" value="1">
+                        <span></span>
+                        Wyrażam zgodę na przetwarzanie moich
+                        danych osobowych podanych w powyższym formularzu w celach handlowych i marketingowych przez
+                        administratora tej strony oraz przez podmioty trzecie.
+                    </labl>
+                    <br>
+                    <label class="agreement checkbox">
+                        <input type="checkbox" name="agreement" value="1">
+                        <span></span>
+                        Oświadczam, że niniejsze zdjęcie
+                        przedstawia wyłącznie mój wizerunek, bez wizerunku osób trzecich i wyrażam zgodę na
+                        nieograniczone czasowo udostępnienie mojego wizerunku, w postaci zdjęcia, w celu umieszczenia go
+                        na niniejszej stronie internetowej.
+                    </label><br>
+                </div>
+                <button class="submit">Wyślij</button>
+            </form>
+        </section>
         <footer class="footer_container">
             <div class="menu_footer">
                 <ul class="menu_footer_list">

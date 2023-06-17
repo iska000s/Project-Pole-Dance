@@ -5,12 +5,16 @@
   clear: both;
   position: fixed;
   bottom: 0;
-
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 80px;
   background-color: black;
+  @include mobile{
+    width: 90%;
+    right: 0;
+  }
+
   .menu_footer{
     display: flex;
     flex-direction: row;
@@ -20,16 +24,28 @@
     width: 100%;
     padding: 0 30px 0 30px;
     background-color: $color-nearly-black;
+    @include mobile{
+      padding: 5px;
+      justify-content: left;
+    }
     .menu_footer_list{
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 50px;
+      margin: 0 15px 0 0;
+
+      @include mobile{
+        gap: 10%;
+      }
       a {
         font-family: $font-primary;
         font-size: 12px;
         text-decoration: none;
         color: #928E8E;
+        @include mobile{
+          font-size: 10px;
+        }
       }
     }
     a{

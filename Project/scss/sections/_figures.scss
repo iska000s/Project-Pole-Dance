@@ -32,6 +32,7 @@
           margin: 0 10px 0 10px;
         }
         @include mobile {
+          top: 0;
           width: 30px;
           height: 30px;
         }
@@ -62,13 +63,18 @@
       justify-content: center;
       position: absolute;
       right: 15%;
-
+      @include mobile{
+        width: 30px;
+        right: 0;
+      }
       a {
-
         font-family: $font-primary;
         color: $color-font-white;
         font-size: 14px;
         text-decoration: none;
+        @include mobile{
+          font-size: 8px;
+        }
       }
     }
   }
@@ -84,14 +90,14 @@
       background-size: 100vw;
     }
     @include mobile {
-      background-size: 80%;
+      height: 150px;
+      background-size: 100%;
       background-position: 200% 0;
     }
   }
 
   .figures_box {
     padding-top: 20px;
-    //background-color: $color-white-background;
     @include desktop {
       padding-left: 60px;
     }
@@ -105,6 +111,10 @@
       font-size: 14px;
       font-weight: 400;
       color: $color-font-black;
+      @include mobile{
+        width: 90%;
+        margin-bottom: 10px;
+      }
     }
     .figures {
       display: flex;
