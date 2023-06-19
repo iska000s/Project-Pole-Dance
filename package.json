@@ -1,18 +1,24 @@
 {
-  "name": "sass",
-  "version": "2.0.0",
-  "source": "Project/html/index.html",
+  "name": "es6-react",
+  "version": "2.1.0",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "webpack serve",
+    "build": "webpack"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.9.2",
-    "process": "^0.11.10"
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.7.0",
+    "babel-loader": "8.2.5",
+    "process": "0.11.10",
+    "webpack": "5.72.1",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.9.0"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-router-dom": "^6.3.0"
   }
 }
