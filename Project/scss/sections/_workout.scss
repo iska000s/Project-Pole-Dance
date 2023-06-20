@@ -24,7 +24,7 @@
     font-weight: 400;
     color: $color-font-white;
   }
-  .workout_imgages {
+  .workout_imgages, ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,6 +38,10 @@
     }
     .workout_image {
       background-color: $color-white-background;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       @include desktop{
         margin-right: 60px;
         margin-bottom: 50px;
@@ -46,9 +50,20 @@
       }
       @include mobile{
         margin: 5%;
-
         height: 150px;
         width: 100px;
+      }
+      img {
+        @include desktop{
+          min-height: 200px;
+          max-height: 260px;
+          max-width: 220px;
+        }
+        @include mobile{
+          max-height: 120px;
+          width: 80px;
+        }
+
       }
     }
   }

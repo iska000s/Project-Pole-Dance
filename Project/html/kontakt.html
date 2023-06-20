@@ -87,21 +87,14 @@
                     <option value="other">Inne</option>
                 </select>
                 <select name="figure_level" class="figure_level" id="figure_level_add_form">
-                    <option value="-1">Wybierz poziom figury</option>
-                    <option value="intro">Intro</option>
-                    <option value="basic">Basic</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advanced">Advanced</option>
-                </select>
-                <select name="figure_category" class="figure_category" id="figure_level_add_form">
-                    <option value="-1">Wybierz kategorię figury</option>
+                    <option value="-1">Wybierz poziom figury (jeżeli wiadomość dotyczy figury)</option>
                     <option value="intro">Intro</option>
                     <option value="basic">Basic</option>
                     <option value="intermediate">Intermediate</option>
                     <option value="advanced">Advanced</option>
                 </select>
                 <div class="figure_add_category">
-                    <p>Zaznacz kategorię figury</p>
+                    <p>Zaznacz kategorię figury (jeżeli wiadomość dotyczy figury)</p>
                     <div class="figure_categories">
                         <label class="checkbox checkbox_category"><input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
@@ -136,7 +129,7 @@
                 </div>
                 <div class="box_message">
                     <label class="title_message" for="textarea">Wiadomość</label>
-                    <textarea disabled class="textarea" rows="3" cols="5" id="messager"
+                    <textarea class="textarea" rows="3" cols="5" id="messager"
                               placeholder="Wpisz wiadomość"></textarea>
                     <labl class="agreement  checkbox">
                         <input type="checkbox" name="agreement" value="1"/>
@@ -173,6 +166,7 @@
     </main>
 
 </section>
-<script src="../js/app.js"></script>
+<div id="app" class="container"></div>
+<script src="../build/out.js"></script>
 </body>
 </html>

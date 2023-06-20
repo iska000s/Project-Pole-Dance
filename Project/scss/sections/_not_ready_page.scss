@@ -1,0 +1,15 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+
+.not_ready .main_page {
+  height: 88vh;
+  .header2 {
+    width: 25%;
+    a {
+      color: cadetblue;
+      line-height: 40px;
+    }
+  }
+}
+
+

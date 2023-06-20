@@ -59,6 +59,7 @@
   .form_message {
     font-size: 12px;
     font-weight: 500;
+    display: flex;
     flex-direction: column;
     width: 50%;
     gap: 5px;
@@ -140,6 +141,7 @@
 
     .textarea {
       margin-bottom: 5px;
+      resize: none;
     }
 
     .agreement {
