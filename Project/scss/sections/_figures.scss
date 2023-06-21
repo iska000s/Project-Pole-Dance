@@ -98,6 +98,7 @@
 
   .figures_box {
     padding-top: 20px;
+
     @include desktop {
       padding-left: 60px;
     }
@@ -116,27 +117,45 @@
         margin-bottom: 10px;
       }
     }
-    .figures {
+
+    .figures ul {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: left;
+
       @include desktop {
         margin-right: 80px;
       }
       .figure {
         background-color: $color-grey;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include desktop {
           margin-right: 10px;
           margin-bottom: 10px;
           height: 250px;
-          width: 200px;
+          width: 230px;
         }
         @include mobile {
           margin: 5%;
           height: 150px;
           width: 100px;
         }
+        img{
+          @include desktop {
+            max-height: 230px;
+            max-width: 220px;
+          }
+          @include mobile {
+
+            max-height: 120px;
+            max-width: 80px;
+          }}
+
       }
     }
   }

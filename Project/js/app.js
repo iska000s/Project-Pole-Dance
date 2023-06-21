@@ -31,8 +31,7 @@ import { createRoot } from "react-dom/client";
 
 import {RandomImg} from "./RandomImg";
 import {figures} from "./figures";
-import CategoryOfFiures from "./categoryOfFiures";
-
+import {FigureCategory} from "./FigureCategory";
 const container = document.getElementById("app");
 const root = createRoot(container);
 
@@ -41,6 +40,7 @@ const App = () => {
             <>
                 cos cos
                 <RandomImg />
+                <FigureCategory/>
             </>
         )
     }
