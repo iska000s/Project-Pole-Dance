@@ -1,52 +1,28 @@
-// import "../scss/index.scss"
-// import React from "react";
-// import { createRoot } from "react-dom/client";
-//
-// import {RandomImg} from "./RandomImg";
-// import {figures} from "./figures";
-//
-// const container = document.getElementById("app");
-//
-// if (container) {
-//     const root = createRoot(container);
-//
-//     const App = () => {
-//         return (
-//             <>
-//                 cos cos
-//                 <RandomImg />
-//             </>
-//         )
-//     }
-//
-//
-//     root.render(<App/>);
-//
-// }
-
-
 import "../scss/index.scss"
 import React from "react";
-import { createRoot } from "react-dom/client";
+import {createRoot} from "react-dom/client";
 
 import {RandomImg} from "./RandomImg";
-import {figures} from "./figures";
 import {FigureCategory} from "./FigureCategory";
-const container = document.getElementById("app");
-const root = createRoot(container);
+import {ChangeCaseFunction} from "./contact";
+import BiggerImg from "./BiggerImg";
+
+
 
 const App = () => {
-        return (
-            <>
-                cos cos
-                <RandomImg />
-                <FigureCategory/>
-            </>
-        )
-    }
+    return (
+        <>
+            <RandomImg/>
+            <FigureCategory/>
+
+        </>
+    )
+}
 
 
-    root.render(<App/>);
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<App/>);
 
 
 

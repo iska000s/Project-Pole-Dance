@@ -12,9 +12,12 @@
 //
 // const handleClick = () => {
 //     const [maxHeight, setHeight] = useState();
-//     newImg.style = {height: maxHeight}
+//     newImg.style.height = {height: maxHeight}
 //     setHeight(() => {
-//     return (
-//         maxHeight === "500px" ? "260px" : "500px"
-// )};
-// }
+//         return (
+//             maxHeight === "500px" ? "260px" : "500px"
+//         )
+//     }
+//     )}
+//
+// export default "BiggerImg";

@@ -1,0 +1,50 @@
+self["webpackHotUpdatees6_react"](0,{
+
+/***/ 23:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(37);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(40);
+/* harmony import */ var _RandomImg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(47);
+/* harmony import */ var _FigureCategory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49);
+/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(50);
+/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_contact__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _BiggerImg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(51);
+/* harmony import */ var _BiggerImg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_BiggerImg__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+var App = function App() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_RandomImg__WEBPACK_IMPORTED_MODULE_3__.RandomImg, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_FigureCategory__WEBPACK_IMPORTED_MODULE_4__.FigureCategory, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_contact__WEBPACK_IMPORTED_MODULE_5__.ChangeCaseFunction, null));
+};
+var container = document.getElementById("app");
+var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(container);
+root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(App, null));
+
+/***/ }),
+
+/***/ 50:
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\Project\\js\\contact.js: Unexpected token, expected \"}\" (53:102)\n\n\u001b[0m \u001b[90m 51 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m             \u001b[33m<\u001b[39m\u001b[33mselect\u001b[39m name\u001b[33m=\u001b[39m\u001b[32m\"case\"\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"case\"\u001b[39m id\u001b[33m=\u001b[39m\u001b[32m\"case\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33moption\u001b[39m value\u001b[33m=\u001b[39m{selectedFruit} onChange\u001b[33m=\u001b[39m{e \u001b[33m=>\u001b[39m setSelectedFruit(e\u001b[33m.\u001b[39mtarget\u001b[33m.\u001b[39mvalue)\u001b[33m>\u001b[39m\u001b[33mWybierz\u001b[39m powód wiadomości\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33moption\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33moption\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"figure_add\"\u001b[39m value\u001b[33m=\u001b[39m\u001b[32m\"photo\"\u001b[39m\u001b[33m>\u001b[39m\u001b[33mChcę\u001b[39m wysłać i opublikować na stronie zdjęcie lub film\u001b[0m\n\u001b[0m \u001b[90m 55 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33moption\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 56 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33moption\u001b[39m value\u001b[33m=\u001b[39m\u001b[32m\"questione\"\u001b[39m\u001b[33m>\u001b[39m\u001b[33mMam\u001b[39m pytanie\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33moption\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n    at instantiate (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:63:32)\n    at constructor (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:358:12)\n    at JSXParserMixin.raise (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:3255:19)\n    at JSXParserMixin.unexpected (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:3285:16)\n    at JSXParserMixin.expect (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:3627:28)\n    at JSXParserMixin.jsxParseExpressionContainer (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:6839:10)\n    at JSXParserMixin.jsxParseAttributeValue (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:6802:21)\n    at JSXParserMixin.jsxParseAttribute (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:6855:38)\n    at JSXParserMixin.jsxParseOpeningElementAfterName (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:6869:28)\n    at JSXParserMixin.jsxParseOpeningElementAt (C:\\Users\\izabe\\CodersLab\\Project-Pole-Dance\\node_modules\\@babel\\parser\\lib\\index.js:6864:17)");
+
+/***/ })
+
+},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ /* webpack/runtime/getFullHash */
+/******/ (() => {
+/******/ 	__webpack_require__.h = () => ("9e575b15a71e949bd5ca")
+/******/ })();
+/******/ 
+/******/ }
+);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC4zMmI4NDRhZjc5ZjgzMThmYWE0NC5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQTJCO0FBQ0Q7QUFDa0I7QUFFTjtBQUNVO0FBQ0g7QUFDVDtBQUlwQyxJQUFNTSxHQUFHLEdBQUcsU0FBTkEsR0FBR0EsQ0FBQSxFQUFTO0VBQ2Qsb0JBQ0lOLDBEQUFBLENBQUFBLHVEQUFBLHFCQUNJQSwwREFBQSxDQUFDRSxpREFBUyxNQUFDLENBQUMsZUFDWkYsMERBQUEsQ0FBQ0csMkRBQWMsTUFBQyxDQUFDLGVBQ2pCSCwwREFBQSxDQUFDSSx3REFBa0IsTUFBQyxDQUV0QixDQUFDO0FBRVgsQ0FBQztBQUdELElBQU1LLFNBQVMsR0FBR0MsUUFBUSxDQUFDQyxjQUFjLENBQUMsS0FBSyxDQUFDO0FBQ2hELElBQU1DLElBQUksR0FBR1gsNERBQVUsQ0FBQ1EsU0FBUyxDQUFDO0FBQ2xDRyxJQUFJLENBQUNDLE1BQU0sZUFBQ2IsMERBQUEsQ0FBQ00sR0FBRyxNQUFDLENBQUMsQ0FBQzs7Ozs7Ozs7Ozs7Ozs7O1VDekJuQiIsInNvdXJjZXMiOlsid2VicGFjazovL2VzNi1yZWFjdC8uL1Byb2plY3QvanMvYXBwLmpzIiwid2VicGFjazovL2VzNi1yZWFjdC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFwiLi4vc2Nzcy9pbmRleC5zY3NzXCJcclxuaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xyXG5pbXBvcnQge2NyZWF0ZVJvb3R9IGZyb20gXCJyZWFjdC1kb20vY2xpZW50XCI7XHJcblxyXG5pbXBvcnQge1JhbmRvbUltZ30gZnJvbSBcIi4vUmFuZG9tSW1nXCI7XHJcbmltcG9ydCB7RmlndXJlQ2F0ZWdvcnl9IGZyb20gXCIuL0ZpZ3VyZUNhdGVnb3J5XCI7XHJcbmltcG9ydCB7Q2hhbmdlQ2FzZUZ1bmN0aW9ufSBmcm9tIFwiLi9jb250YWN0XCI7XHJcbmltcG9ydCBCaWdnZXJJbWcgZnJvbSBcIi4vQmlnZ2VySW1nXCI7XHJcblxyXG5cclxuXHJcbmNvbnN0IEFwcCA9ICgpID0+IHtcclxuICAgIHJldHVybiAoXHJcbiAgICAgICAgPD5cclxuICAgICAgICAgICAgPFJhbmRvbUltZy8+XHJcbiAgICAgICAgICAgIDxGaWd1cmVDYXRlZ29yeS8+XHJcbiAgICAgICAgICAgIDxDaGFuZ2VDYXNlRnVuY3Rpb24vPlxyXG5cclxuICAgICAgICA8Lz5cclxuICAgIClcclxufVxyXG5cclxuXHJcbmNvbnN0IGNvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiYXBwXCIpO1xyXG5jb25zdCByb290ID0gY3JlYXRlUm9vdChjb250YWluZXIpO1xyXG5yb290LnJlbmRlcig8QXBwLz4pO1xyXG5cclxuXHJcblxyXG4iLCJfX3dlYnBhY2tfcmVxdWlyZV9fLmggPSAoKSA9PiAoXCI5ZTU3NWIxNWE3MWU5NDliZDVjYVwiKSJdLCJuYW1lcyI6WyJSZWFjdCIsImNyZWF0ZVJvb3QiLCJSYW5kb21JbWciLCJGaWd1cmVDYXRlZ29yeSIsIkNoYW5nZUNhc2VGdW5jdGlvbiIsIkJpZ2dlckltZyIsIkFwcCIsImNyZWF0ZUVsZW1lbnQiLCJGcmFnbWVudCIsImNvbnRhaW5lciIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiLCJyb290IiwicmVuZGVyIl0sInNvdXJjZVJvb3QiOiIifQ==

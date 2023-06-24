@@ -10,8 +10,13 @@ const imgHandspring = document.querySelector(".figures_handspring");
 const imgStrength = document.querySelector(".figures_strength");
 
 export const FigureCategory = () => {
+
     if (imgSit) {
         const ctImg = createRoot(imgSit);
+        //
+        // const Click = (e) => {
+        //     e.style.height = "900px" ? e.style.height = "200px" : e.style.height = "900px";
+        // }
 
         const FigureCategory = () => {
             const categoryArray = []
@@ -22,6 +27,7 @@ export const FigureCategory = () => {
                     categoryArray.push(newSrc);
                 }
             }
+            // return <ul>{categoryArray.map(element => <li className={"figure"}>{element.forEach(onclick, Click)}</li>)}</ul>;
             return <ul>{categoryArray.map(element => <li className={"figure"}>{element}</li>)}</ul>;
         }
 
