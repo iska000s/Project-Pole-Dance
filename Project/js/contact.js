@@ -11,12 +11,12 @@ export const ChangeCaseFunction = () => {
         const [visibleState, setVisible] = useState("none");
 
         const AddCategory = (e) => {
-            setSelectedCase(prevState => {
+            e.preventDefault();
+            setSelectedCase(() => {
                 if (e.target.value === "photo") {
-                    console.log("COS")
+                    console.log("wybrano dodanie zdjęcia - pokaż dodatkowe opcje")
                     setVisible("flex");
                 } else {
-                    console.log("NIC")
                     setVisible("none");
                 }
             })
@@ -45,42 +45,42 @@ export const ChangeCaseFunction = () => {
                 <div className="figure_add_category" style={{display: `${visibleState}`}}>
                     <p>Zaznacz kategorię figury (jeżeli wiadomość dotyczy figury)</p>
                     <div className="figure_categories">
-                        <label className="checkbox checkbox_category"><input type="checkbox" name="figuer_category"
-                                                                             value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             krzesełko
                         </label>
-                        <label className="checkbox checkbox_category"><input type="checkbox" name="figuer_category"
-                                                                             value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             szpagat
                         </label>
-                        <label className="checkbox checkbox_category"> <input type="checkbox" name="figuer_category"
-                                                                              value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             handstand</label>
-                        <label className="checkbox checkbox_category"> <input type="checkbox" name="figuer_category"
-                                                                              value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             shoulder</label>
-                        <label className="checkbox checkbox_category"> <input type="checkbox" name="figuer_category"
-                                                                              value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             handspring</label>
-                        <label className="checkbox checkbox_category"> <input type="checkbox" name="figuer_category"
-                                                                              value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             siłowe</label>
-                        <label className="checkbox checkbox_category"> <input type="checkbox" name="figuer_category"
-                                                                              value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             kombos</label>
-                        <label className="checkbox checkbox_category"> <input type="checkbox" name="figuer_category"
-                                                                              value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             basic spin</label>
-                        <label className="checkbox checkbox_category"> <input type="checkbox" name="figuer_category"
-                                                                              value="1"/>
+                        <label className="checkbox checkbox_category">
+                            <input type="checkbox" name="figuer_category" value="1"/>
                             <span></span>
                             obrotowe</label>
                     </div>

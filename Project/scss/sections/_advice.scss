@@ -1,0 +1,55 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+
+.porady_page{
+  background-image: url("../img/2.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position-y: -250px;
+  .header1{
+    margin-left: 50px;
+  }
+  .header3{
+    padding-bottom: 30px;
+  }
+}
+.advice1, .advice3{
+  background-color: $color-white-background;
+  margin: 20px 50px 120px 50px;
+  padding: 20px;
+  line-height: 20px;
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+.advice2{
+  margin: 20px 50px 120px 50px;
+  padding: 20px;
+  line-height: 20px;
+  font-family: $font-primary;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  background-color: $color-chalk-grey;
+  opacity: 75%;
+  width: 70%;
+
+  .circles_advice_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    .circle_advice{
+      width: 30%;
+      justify-content: center;
+      .header3, p{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

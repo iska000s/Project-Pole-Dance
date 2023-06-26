@@ -6,52 +6,50 @@ const newImgBasic = document.querySelector(".workout_basic");
 const newImgIntermediate = document.querySelector(".workout_intermediate");
 const newImgAdvanced = document.querySelector(".workout_advanced");
 
+if (newImgBasic) {
+    const createImg = createRoot(newImgBasic);
 
-export const RandomImg = () => {
+    const RandomImgFunction = () => {
+        const randomImgArray = [];
+        for (let n = 0; n < figures.length; n++) {
+            if (randomImgArray.length === 6) {
+                return <ul>{randomImgArray.map((element) => <li key={figures.id}
+                                                                className={"workout_image"}>{element}</li>)}</ul>;
+            } else {
+                const randomObj = Math.floor(Math.random() * figures.length);
+                if (figures[randomObj].level === "basic" && randomImgArray.includes(figures[randomObj].src) === false) {
+                    const sourceImg = figures[randomObj].src;
+                    randomImgArray.push(sourceImg);
 
-    if (newImgBasic) {
-        const createImg = createRoot(newImgBasic);
-
-        const RandomImgFunction = () => {
-            const randomImgArray = [];
-            for (let n = 0; n < figures.length; n++) {
-                if (randomImgArray.length === 6) {
-                    return <ul>{randomImgArray.map((element) => <li key={figures.id} className={"workout_image"}>{element}</li>)}</ul>;
-                } else {
-                    const randomObj = Math.floor(Math.random() * figures.length);
-                            if (figures[randomObj].level === "basic" && randomImgArray.includes(figures[randomObj].src) === false) {
-                                const sourceImg = figures[randomObj].src;
-                                randomImgArray.push(sourceImg);
-
-                            }
                 }
             }
         }
-
-        createImg.render(<RandomImgFunction/>);
-        }
-
-    if (newImgIntermediate) {
-        const createImg = createRoot(newImgIntermediate);
-
-        const RandomImgFunction = () => {
-            const randomImgArray = [];
-            for (let n = 0; n < figures.length; n++) {
-                if (randomImgArray.length === 6) {
-                    return <ul>{randomImgArray.map((element) => <li key={figures.id} className={"workout_image"}>{element}</li>)}</ul>;
-                } else {
-                    const randomObj = Math.floor(Math.random() * figures.length);
-                    if (figures[randomObj].level === "intermediate" && randomImgArray.includes(figures[randomObj].src) === false) {
-                        const sourceImg = figures[randomObj].src;
-                        randomImgArray.push(sourceImg);
-                    }
-                }
-            }
-        }
-        createImg.render(<RandomImgFunction/>);
     }
+
+    createImg.render(<RandomImgFunction/>);
 }
 
+
+if (newImgIntermediate) {
+    const createImg = createRoot(newImgIntermediate);
+
+    const RandomImgFunction = () => {
+        const randomImgArray = [];
+        for (let n = 0; n < figures.length; n++) {
+            if (randomImgArray.length === 6) {
+                return <ul>{randomImgArray.map((element) => <li key={figures.id}
+                                                                className={"workout_image"}>{element}</li>)}</ul>;
+            } else {
+                const randomObj = Math.floor(Math.random() * figures.length);
+                if (figures[randomObj].level === "intermediate" && randomImgArray.includes(figures[randomObj].src) === false) {
+                    const sourceImg = figures[randomObj].src;
+                    randomImgArray.push(sourceImg);
+                }
+            }
+        }
+    }
+    createImg.render(<RandomImgFunction/>);
+}
 
 if (newImgAdvanced) {
     const createImg = createRoot(newImgAdvanced);
@@ -60,7 +58,8 @@ if (newImgAdvanced) {
         const randomImgArray = [];
         for (let n = 0; n < figures.length; n++) {
             if (randomImgArray.length == 3) {
-                return <ul>{randomImgArray.map((element) => <li key={figures.id} className={"workout_image"}>{element}</li>)}</ul>;
+                return <ul>{randomImgArray.map((element) => <li key={figures.id}
+                                                                className={"workout_image"}>{element}</li>)}</ul>;
             } else {
                 const randomObj = Math.floor(Math.random() * figures.length);
                 if (figures[randomObj].level === "advanced" && randomImgArray.includes(figures[randomObj].src) === false) {
@@ -72,3 +71,5 @@ if (newImgAdvanced) {
     }
     createImg.render(<RandomImgFunction/>);
 }
+
+export default "RandomImg";

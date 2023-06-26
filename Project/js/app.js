@@ -2,10 +2,9 @@ import "../scss/index.scss"
 import React from "react";
 import {createRoot} from "react-dom/client";
 
-import {RandomImg} from "./RandomImg";
-import {FigureCategory} from "./FigureCategory";
+import RandomImg from "./RandomImg";
+import FigureCategory from "./FigureCategory";
 import {ChangeCaseFunction} from "./contact";
-import BiggerImg from "./BiggerImg";
 
 
 
