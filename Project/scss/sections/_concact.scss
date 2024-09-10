@@ -14,6 +14,7 @@
     flex-direction: column;
     align-items: start;
     margin-left: 20px;
+    height: 100vh;
   }
 
   .contact {
@@ -63,6 +64,9 @@
     flex-direction: column;
     width: 50%;
     gap: 5px;
+    @include mobile{
+      width: 100%;
+    }
 
     .personal_date {
       position: relative;
@@ -84,6 +88,14 @@
         height: 20px;
         position: absolute;
         left: 190px;
+        @include mobile{
+          width: 40%;
+        }
+      }
+    }
+    .caseAdd{
+      @include mobile{
+        width: 100%;
       }
     }
 
@@ -94,7 +106,9 @@
       height: 20px;
       margin-bottom: 15px;
       cursor: pointer;
-
+      @include mobile{
+        width: 93%;
+      }
     }
 
     select {
@@ -132,6 +146,7 @@
     width: 400px;
     @include mobile {
       padding-bottom: 60px;
+      width: 93%;
     }
 
     .title_message {

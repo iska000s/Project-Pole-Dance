@@ -9,7 +9,7 @@
   align-items: center;
   width: 90%;
   height: 80px;
-  background-color: black;
+  background-color: #000000;
   @include mobile{
     width: 90%;
     right: 0;
@@ -23,10 +23,10 @@
     height: 50px;
     width: 100%;
     padding: 0 30px 0 30px;
-    background-color: $color-nearly-black;
+    // background-color: $color-nearly-black;
     @include mobile{
       padding: 5px;
-      justify-content: left;
+      justify-content: space-around;
     }
     .menu_footer_list{
       display: flex;
@@ -44,7 +44,7 @@
         text-decoration: none;
         color: #928E8E;
         @include mobile{
-          font-size: 10px;
+          font-size: 14px;
         }
       }
     }

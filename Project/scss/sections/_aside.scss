@@ -28,7 +28,7 @@
         font-weight: bold;
         color: $color-font-white;
         @include mobile{
-          font-size: 6px;
+          font-size: 60%;
           font-weight: 300;
         }
       }
