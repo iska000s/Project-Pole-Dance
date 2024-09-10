@@ -2,7 +2,7 @@
 @import "../settings/mixins";
 
 .menu_aside-container {
-  height: 100vh;
+  height: 100%;
   position: absolute;
   .menu_aside {
     @include mobile{
