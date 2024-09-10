@@ -20,9 +20,9 @@ if (imgSit) {
     const FigureCategory = () => {
         const categoryArray = []
         const [prevHeight, setHeight] = useState("230px");
-        const Click = (e) => { setHeight(() => "230px" ? "900px" : "230px"
-            )
-        }
+        // const Click = (e) => { setHeight(() => "230px" ? "900px" : "230px"
+        //     )
+        // }
 
         for (let i = 0; i < figures.length; i++) {
             if (figures[i].category === 'siedzące') {
@@ -30,7 +30,7 @@ if (imgSit) {
                 categoryArray.push(newSrc);
             }
         }
-        return <ul >{categoryArray.map(element => <li style={{height: prevHeight}} onClick={Click} className={"figure"}>{element}</li>)}</ul>;
+        return <ul >{categoryArray.map(element => <li className={"figure"}>{element}</li>)}</ul>;
         // return <ul>{categoryArray.map(element => <li className={"figure"}>{element}</li>)}</ul>;
     }
     ctImg.render(<FigureCategory/>);
