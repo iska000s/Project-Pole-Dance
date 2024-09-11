@@ -3,19 +3,21 @@
 
 .menu_aside-container {
   height: 100%;
-  position: absolute;
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // position: absolute;
   .menu_aside {
-    @include mobile{
-      width: 15%;
-    }
     position: fixed;
     display: flex;
     flex-direction: column;
     padding-top: 103px;
     gap: 18px;
     height: 100%;
-    width: 10%;
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    width: 10vw;
     background-color: $color-black-background;
+    @include mobile{
+      width: 16vw;
+    }
     .menu_aside_element {
       margin: 0 0 0 15px;
       @include mobile {

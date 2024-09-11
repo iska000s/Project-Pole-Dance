@@ -4,7 +4,8 @@
 
 .workout{
   @include desktop {
-    padding-left: 60px;
+    // padding-left: 60px;
+    padding: 5%;
   }
   @include mobile{
     padding: 5%;
@@ -28,9 +29,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     @include desktop {
-      margin-right: 100px;
+      // margin-right: 100px;
       margin-bottom: 60px;
     }
     @include mobile{
@@ -51,7 +52,8 @@
       @include mobile{
         margin: 5%;
         height: 150px;
-        width: 100px;
+        // width: 100px;
+        width: 30vw;
       }
       img {
         @include desktop{
@@ -61,7 +63,7 @@
         }
         @include mobile{
           max-height: 120px;
-          width: 80px;
+          max-width: 90%;
         }
 
       }

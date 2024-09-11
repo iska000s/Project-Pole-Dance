@@ -7,12 +7,21 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  background-position-y: -250px;
+  background-position-y: 70%;
+  background-position-x: center;
+
+  @include mobile{
+    background-position-x: 50%;
+    background-position-y: center;
+  }
   .header1{
-    margin-left: 50px;
+    margin-left: 5%;
   }
   .header3{
     padding-bottom: 30px;
+    @include mobile{
+      font-size: 1,5em;
+    }
   }
 }
 .advice1, .advice3{
@@ -22,6 +31,9 @@
   line-height: 20px;
   font-family: $font-primary;
   font-weight: 300;
+  @include mobile{
+    margin: 20px 5% 100px 5%;
+  }
 }
 
 .advice2{
@@ -37,6 +49,9 @@
   background-color: $color-chalk-grey;
   opacity: 75%;
   width: 70%;
+  @include mobile{
+    margin: 20px 5% 100px 5%;
+  }
 
   .circles_advice_box{
     display: flex;
@@ -46,9 +61,17 @@
     .circle_advice{
       width: 30%;
       justify-content: center;
-      .header3, p{
+      .header3{
         display: flex;
         justify-content: center;
+        @include mobile{
+          font-size: 1rem;
+        }
+      }
+      p{
+        @include mobile{
+            font-size: 0.8rem;
+        }
       }
     }
   }

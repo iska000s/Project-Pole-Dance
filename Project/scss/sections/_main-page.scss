@@ -2,32 +2,41 @@
 @import "../settings/mixins";
 
 .one_pager{
-  height: 90vh;
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // height: 90vh;
 }
 .main_page{
   //background-image: url("../img/img_main_page.jpeg");
   background-image: url("../img/img_main_page.jpeg");
   background-repeat: no-repeat;
   z-index: 200;
+  height: 90%;
   @include desktop {
+    padding-inline: 5%;
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     background-attachment: fixed;
     background-size: 66.5%;
-    //background-position-x: 175%;
     background-position: right;
-    margin-left: 60px;
+    padding: 5%;
+    // margin-left: 60px;
   }
   @include mobile{
+    background-attachment: fixed;
     background-size: 100%;
     width: 90%;
-    margin-left: 5%;
-    right: 10px;
+    height: 55vh;
+    padding: 5%;
+    padding-top: 30vh;
+
+    // margin-left: 5%;
   }
+
 
   .circles_workout-container{
     display: flex;
     @include mobile {
-      flex-wrap: wrap;
-      justify-content: space-around;
+      // flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     .circles_workout{
@@ -41,7 +50,7 @@
       justify-content: center;
       margin-right: 20px;
       @include mobile{
-        width: 100px;
+        width: 30%;
         height: 100px;
         margin: 0;
       }
@@ -50,6 +59,9 @@
   }
   .circles_workout-container :nth-of-type(1){
     border: 10px #E7E6E6 solid;
+    @include mobile{
+      border: 6px #E7E6E6 solid;
+    }
     h2, a {
       border: none;
     }
@@ -57,6 +69,9 @@
   .circles_workout-container :nth-child(2){
     border: 10px #CCCBCB solid;
     position: relative;
+    @include mobile{
+      border: 6px #CCCBCB solid;
+    }
     h2, a {
       border: none;
     }
@@ -64,6 +79,9 @@
   .circles_workout-container :nth-of-type(3){
     border: 10px #9D9D9D solid;
     position: relative;
+    @include mobile{
+      border: 6px #9D9D9D solid;
+    }
     h2, a {
       border: none;
     }
