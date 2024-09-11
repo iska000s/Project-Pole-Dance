@@ -9,7 +9,6 @@
   flex-direction: column;
   background-position-y: 70%;
   background-position-x: center;
-
   @include mobile{
     background-position-x: 50%;
     background-position-y: center;
@@ -35,7 +34,6 @@
     margin: 20px 5% 100px 5%;
   }
 }
-
 .advice2{
   margin: 20px 50px 120px 50px;
   padding: 20px;
@@ -52,7 +50,6 @@
   @include mobile{
     margin: 20px 5% 100px 5%;
   }
-
   .circles_advice_box{
     display: flex;
     flex-direction: row;

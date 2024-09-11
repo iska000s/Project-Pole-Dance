@@ -3,8 +3,6 @@
 
 .menu_aside-container {
   height: 100%;
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // position: absolute;
   .menu_aside {
     position: fixed;
     display: flex;
@@ -12,7 +10,6 @@
     padding-top: 103px;
     gap: 18px;
     height: 100%;
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     width: 10vw;
     background-color: $color-black-background;
     @include mobile{

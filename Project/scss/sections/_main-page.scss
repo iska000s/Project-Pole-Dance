@@ -1,24 +1,17 @@
 @import "../settings/variables";
 @import "../settings/mixins";
 
-.one_pager{
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // height: 90vh;
-}
 .main_page{
-  //background-image: url("../img/img_main_page.jpeg");
   background-image: url("../img/img_main_page.jpeg");
   background-repeat: no-repeat;
   z-index: 200;
   height: 90%;
   @include desktop {
     padding-inline: 5%;
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     background-attachment: fixed;
     background-size: 66.5%;
     background-position: right;
     padding: 5%;
-    // margin-left: 60px;
   }
   @include mobile{
     background-attachment: fixed;
@@ -27,18 +20,12 @@
     height: 55vh;
     padding: 5%;
     padding-top: 30vh;
-
-    // margin-left: 5%;
   }
-
-
   .circles_workout-container{
     display: flex;
     @include mobile {
-      // flex-wrap: wrap;
-      justify-content: space-between;
+    justify-content: space-between;
     }
-
     .circles_workout{
       background-color: $color-white-background;
       border-radius: 50%;
@@ -55,7 +42,6 @@
         margin: 0;
       }
     }
-
   }
   .circles_workout-container :nth-of-type(1){
     border: 10px #E7E6E6 solid;
@@ -88,14 +74,12 @@
   }
 .about_platform{
   width: 295px;
-
   .about_platform_text{
     margin-right: 20px;
     padding-bottom: 20px;
     font-family: $font-primary;
     font-size: 14px;
     font-weight: 300;
-
   }
 }
   .header3 {

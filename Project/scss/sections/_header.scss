@@ -8,7 +8,6 @@
   z-index: 500;
   position: sticky;
   box-shadow: 2px 3px 3px 2px $color-soft-grey;
-  //border-bottom: 2px black solid;
   @include mobile {
     width: 100%;
   }
@@ -21,13 +20,11 @@
       margin-left: 60px;
     }
     @include mobile{
-      // gap: 5%;
       padding-inline: 1%;
       justify-content: space-around;
       line-height: 10px;
     }
     .menu_main_element, a{
-
       @include desktop{
         font-size: 16px;
       }
